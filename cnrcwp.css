@@ -1,0 +1,230 @@
+
+/*
+Theme Name:mpro, Professional Theme subtheme
+*/
+
+
+/*
+ * Layout
+ */
+
+body {
+  background:#003;
+
+  /*  Background */
+  background-image:url('./images/mapBackWave.png'); 
+  background-repeat:no-repeat;
+  background-position:left bottom;
+  background-attachment:fixed;
+}
+
+#wrapper {
+  max-width:900px;
+  margin:0 auto;
+  margin-top:20px;
+  margin-bottom:40px;
+  box-shadow:10px 10px 100px #fff;
+  background:#e9e9e9;
+  overflow:hidden;
+  
+  -khtml-border-radius-topleft: 8px;
+  -khtml-border-radius-topright: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -khtml-border-radius-bottomleft: 8px;
+  -khtml-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+
+
+#site-title {
+  font-size:30px;
+}
+
+#site-title a {
+  color:#112;
+}
+#site-description {
+  font-size:22px;
+  font-weight: bold;
+  line-height:40px;
+}
+
+.page-title{
+  font-size:32px;
+}
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  /*background-color:#b4c1d7;*/
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6;
+}
+.ui-widget-content, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+border: 5px solid #000/;
+background: #bfc8d7;
+}
+
+.ui-widget-content a, {
+}
+
+.view-projects h3{
+    font-size:120%;
+    font-weight:none;
+}
+.view-project .view-header h3{
+
+}
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active a, .ui-widget-content a{
+    font-weight:bold;
+}
+
+/*Team*/
+.view-content caption{
+    text-align: left;
+    font-size:140%;
+    font-weight:bold;
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+.views-field-field-affiliation{
+  width: 360px;
+
+}
+tr.even td{
+  background-color: #eee;
+}
+tr.odd td{
+  background-color: #ddd;
+}
+
+
+/*
+ * Style
+ */
+
+h2.entry-title{
+  /*Taille de la police dans la slide*/
+  font-size: 16px;
+}
+
+#content p{
+    text-align:justify;
+    /*font-size:12px;*/
+}
+
+.field-name-field-affiliation{
+    margin:5px;
+    font-size: 80%;
+}
+
+.field-name-field-email{
+    font-weight:bold;
+}
+
+/*
+  Vue des partners
+*/
+
+h3.partner-title-table{
+    padding: 0 0 0 0;
+	margin: 0 0 0 0;	
+}
+
+h3.partner-title-table table{
+    border: 1px;
+    background: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h3.partner-title-table table tr td{
+	border: none;
+    background: none;
+    padding: 0 0 0 0;
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    font-size:14px;
+}
+
+
+
+
+
+.partner-accordion-div {
+    margin: 0 0 10px 0;  
+}
+
+
+
+h3.partner-title-table table tr td:last-of-type{
+   text-align: right;
+   width: 40%; /* So the images have enough space */
+   position: relative;
+}
+
+h3.partner-title-table table tr td img{
+	width: auto;
+    height: 20px;
+    vertical-align: middle;    
+}
+
+
+
+/** Sasha added styles */
+.calendar-calendar .month-view table.mini tr td {
+	border: 1px solid black;
+}
+
+
+/** delete borders for the empty days */
+.calendar-calendar .month-view table.mini tr td.mon.mini.empty{
+	border-right: none;
+}
+
+.calendar-calendar .month-view table.mini tr td.sun.mini.empty{
+	border-left: none;
+}
+
+.calendar-calendar .month-view table.mini tr td.tue.mini.empty,
+.calendar-calendar .month-view table.mini tr td.wed.mini.empty,
+.calendar-calendar .month-view table.mini tr td.thu.mini.empty,
+.calendar-calendar .month-view table.mini tr td.fri.mini.empty,
+.calendar-calendar .month-view table.mini tr td.sat.mini.empty{
+	border-right: none;
+	border-left: none;
+}
+
+/* Sasha: add padding to the mini calendar */
+.calendar-calendar .month-view table.mini td {
+	padding-right: 5px;
+	padding-left: 3px;
+}
+
+/* Sasha: add black border to the header of the mini callendar */
+.calendar-calendar .month-view table.mini thead th {
+	border: 1px solid black;
+}
+
+
+/*Publications and conference */
+.view-grouping .view-grouping-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.view-grouping .view-grouping-content .item-list h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
