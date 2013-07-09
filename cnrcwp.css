@@ -228,3 +228,23 @@ h3.partner-title-table table tr td img{
     font-weight: bold;
     margin: 10px 0 0 0;
 }
+
+
+/* Workshop schedule style */
+table.workshop-schedule tr td {
+    text-align: center;
+    padding: 4px 2px 4px 2px;
+}
+
+table.workshop-schedule tr td:first-of-type {
+    width: 100px;
+}
+
+
+table.workshop-schedule tr.day-start td {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
