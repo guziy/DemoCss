@@ -160,7 +160,7 @@ h3.partner-title-table table tr td{
     font-size:14px;
 }
 
-h3.partner-title-table table tr td:hover{
+div.ui-state-hover h3.partner-title-table table tr td{
     color: #000;	
 }
 
