@@ -140,12 +140,16 @@ h3.partner-title-table{
 	margin: 0 0 0 0;	
 }
 
+
+
+
 h3.partner-title-table table{
     border: 1px;
     background: none;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
+
 
 h3.partner-title-table table tr td{
 	border: none;
@@ -156,7 +160,14 @@ h3.partner-title-table table tr td{
     font-size:14px;
 }
 
+h3.partner-title-table table tr td:hover{
+    color: #000;	
+}
 
+div.ui-state-active a h3.partner-title-table table tr td{
+    color: #000;
+    font-weight: bold;	
+}
 
 
 
