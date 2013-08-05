@@ -1,4 +1,3 @@
-
 /*
 Theme Name:mpro, Professional Theme subtheme
 */
@@ -12,7 +11,7 @@ body {
   background:#003;
 
   /*  Background */
-  /* background-image: url('./images/mapBackWave.png');*/ 
+  background-image: url('./images/mapBackWave.png');
   background-repeat:no-repeat;
   background-position:left bottom;
   background-attachment:fixed;
