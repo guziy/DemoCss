@@ -12,7 +12,7 @@ body {
   background:#003;
 
   /*  Background */
-  background-image:url('./images/mapBackWave.png'); 
+  /* background-image: url('./images/mapBackWave.png');*/ 
   background-repeat:no-repeat;
   background-position:left bottom;
   background-attachment:fixed;
@@ -76,7 +76,7 @@ background: #bfc8d7;
 
 .view-projects h3{
     font-size:120%;
-    font-weight:none;
+    font-weight:normal;
 }
 .view-project .view-header h3{
 
