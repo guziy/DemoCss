@@ -1,3 +1,4 @@
+
 /*
 Theme Name:mpro, Professional Theme subtheme
 */
@@ -8,24 +9,37 @@ Theme Name:mpro, Professional Theme subtheme
  */
 
 body {
-  background:#003;
 
+  background: #120d0d;
   /*  Background */
-  background-image: url('./images/mapBackWave.png');
+  background-image: url('./images/6d5cded8.png');
+
+
+
+/*
   background-repeat:no-repeat;
   background-position:left bottom;
   background-attachment:fixed;
+ */
 }
 
-#wrapper {
-  max-width:900px;
+div#wrapper {
+  max-width:1000px;
   margin:0 auto;
   margin-top:20px;
   margin-bottom:40px;
   box-shadow:10px 10px 100px #fff;
   background:#e9e9e9;
   overflow:hidden;
-  
+
+
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius:8px;
+  border-bottom-left-radius:8px;
+
+
   -khtml-border-radius-topleft: 8px;
   -khtml-border-radius-topright: 8px;
   -moz-border-radius-topleft: 8px;
@@ -49,15 +63,25 @@ body {
   color:#112;
 }
 #site-description {
-  font-size:22px;
+  margin-top: 28px;
+  font-size:23px;
   font-weight: bold;
   line-height:40px;
+}
+
+#logo{
+    width: 200px;
 }
 
 .page-title{
   font-size:32px;
 }
 
+/* Sasha
+ * Remove bottom border from the accordion headers*/
+.ui-accordion-header{
+	border-bottom: none;
+}
 
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
@@ -66,11 +90,11 @@ body {
   background: #e6e6e6;
 }
 .ui-widget-content, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-border: 5px solid #000/;
+/*border: 5px solid #000;*/
 background: #bfc8d7;
 }
 
-.ui-widget-content a, {
+.ui-widget-content a {
 }
 
 .view-projects h3{
@@ -136,7 +160,7 @@ h2.entry-title{
 
 h3.partner-title-table{
     padding: 0 0 0 0;
-	margin: 0 0 0 0;	
+    margin: 0 0 0 0;
 }
 
 
@@ -151,7 +175,7 @@ h3.partner-title-table table{
 
 
 h3.partner-title-table table tr td{
-	border: none;
+    border: none;
     background: none;
     padding: 0 0 0 0;
     font-weight: normal;
@@ -160,39 +184,38 @@ h3.partner-title-table table tr td{
 }
 
 div.ui-state-hover h3.partner-title-table table tr td{
-    color: #000;	
+    color: #000;
 }
 
 div.ui-state-active a h3.partner-title-table table tr td{
     color: #000;
-    font-weight: bold;	
+    font-weight: bold;
 }
 
 
 
 .partner-accordion-div {
-    margin: 0 0 10px 0;  
+    margin: 0 0 10px 0;
 }
 
 
-
+/* So the images have enough space */
 h3.partner-title-table table tr td:last-of-type{
    text-align: right;
-   width: 40%; /* So the images have enough space */
-   position: relative;
+   width: 60%;
 }
 
 h3.partner-title-table table tr td img{
-	width: auto;
-    height: 20px;
-    vertical-align: middle;    
+	width: 160px;
+	height: auto;
+    vertical-align: middle;
 }
 
 
 
 /** Sasha added styles */
 .calendar-calendar .month-view table.mini tr td {
-	border: 1px solid black;
+	border: 0.125em solid black;
 }
 
 
@@ -216,13 +239,13 @@ h3.partner-title-table table tr td img{
 
 /* Sasha: add padding to the mini calendar */
 .calendar-calendar .month-view table.mini td {
-	padding-right: 5px;
-	padding-left: 3px;
+	padding-right: 0.313em;
+	padding-left: 0.188em;
 }
 
 /* Sasha: add black border to the header of the mini callendar */
 .calendar-calendar .month-view table.mini thead th {
-	border: 1px solid black;
+	border: 0.125em solid black;
 }
 
 
@@ -242,12 +265,20 @@ h3.partner-title-table table tr td img{
 
 /* Workshop schedule style */
 table.workshop-schedule tr td {
-    text-align: center;
+    text-align: left;
+    vertical-align: middle;
     padding: 4px 2px 4px 2px;
 }
 
 table.workshop-schedule tr td:first-of-type {
     width: 100px;
+    text-align: center;
+}
+
+table.workshop-schedule tr td.name-email-affil {
+    width: 200px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 
@@ -256,5 +287,342 @@ table.workshop-schedule tr.day-start td {
     color: #fff;
 }
 
+table.workshop-schedule tr td.talk-title{
+	text-align: left;
+}
+
+/* fields for document search*/
+#edit-field-year-value-value-date {
+	width: 60px;
+}
 
 
+/* simulation subtitle */
+span.span-simulation-subtitle{
+	font-size: 10px;
+}
+
+
+
+
+/*Sasha photo gallery*/
+.node-gallery {
+  float: left;
+  width: 260px;
+  height: 200px;
+  position: relative;
+  margin: 0 60px 50px 0;
+}
+
+.node-gallery img {
+	position: absolute;
+	bottom:0px;
+}
+
+.node-gallery .image1 {
+  left: 0px;
+  z-index: 3;
+  width: 260px;
+  height: 200px;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease;
+ /* border-color: gray;*/
+}
+
+.node-gallery .image2 {
+  left: 5px;
+  width: 260px;
+  height: 195px;
+  z-index: 2;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease;
+  /*border-color: gray;*/
+}
+
+.node-gallery .image3 {
+  left: 10px;
+  height: 190px;
+  width: 260px;
+  z-index: 1;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease;
+  /*border-color: gray;*/
+}
+
+.image1, .image2, .image3{
+  border: 5px solid #d1d1d1;
+  box-shadow: 1px 1px 2px #666;
+  -webkit-shadow:1px 1px 2px #666;
+  -webkit-transform:rotate(0deg) translate(0px);
+}
+
+.node-gallery:hover .image1{
+   z-index: 6;
+  -ms-transform: rotate(-5deg) translate(-20px, -2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(-5deg) translate(-20px, 2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(-5deg) translate(-20px, -2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(-5deg) translate(-20px, -2px);
+  -o-transform-origin:center bottom;
+}
+
+.node-gallery:hover .image2{
+   z-index: 5;
+  -ms-transform: rotate(-2deg) translate(0px, 2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(-2deg) translate(0px, -2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(-2deg) translate(0px, 2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(-2deg) translate(0px, 2px);
+  -o-transform-origin:center bottom;
+}
+
+.node-gallery:hover .image3{
+   z-index: 4;
+  -ms-transform: rotate(5deg) translate(20px,-2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(5deg) translate(20px,2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(5deg) translate(20px,-2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(5deg) translate(20px,-2px);
+  -o-transform-origin:center bottom;
+}
+
+h6.album-title{
+	position: absolute;
+	left: 10px;
+	bottom:10px;
+	width: 90%;
+	z-index: 4;
+	color: white;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 0 0 0 10px;
+}
+
+
+.public-documents-list li.views-row{
+	margin-bottom: 20px;
+}
+
+/* Add to calendar button */
+.event-add-to-calendar{
+	margin-bottom: 10px;
+	text-align:right;
+}
+
+/* Table of event participants  */
+td.views-field.views-field-title.event-participants-table-name-column{
+	width: 40%;
+}
+
+
+/*Style NSERC logo*/
+#block-imageblock-1 img.imageblock-image{
+  background: none;
+  width: 300px;
+  border: none;
+  padding: 0;
+}
+
+
+/* Simulations in accordion */
+
+table.simulation-header-table{
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+table.simulation-header-table tr td{
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+
+table.simulation-header-table tr td:last-of-type{
+  text-align: right;
+}
+
+
+/*Make the text to change color when hovered*/
+/** #555 - default color, #212121 - when hovered or active
+ */
+div.simulation-row{
+    color: #555;
+    margin-bottom: 0.6em;
+}
+
+div.ui-state-hover div.simulation-row{
+    color: #212121;
+}
+
+div.ui-state-active div.simulation-row{
+    color: #212121;
+    font-weight: bold;
+}
+
+
+div.ui-state-hover table.simulation-header-table tr td{
+    color: #212121;
+}
+
+div.ui-state-active table.simulation-header-table tr td{
+    color: #212121;
+    font-weight: bold;
+}
+
+
+
+/* Show dates with the same color as text when hovered */
+table.simulation-header-table tr td span.date-display-*{
+  color: #555;
+}
+
+div.ui-state-hover table.simulation-header-table tr td span.date-display-*{
+  color: #000;
+}
+
+/*Add space between groups*/
+div.views-row.views-row-last.simulation-row{
+  margin-bottom: 2.4em;
+}
+
+
+/* Year search field for papers */
+input#edit-field-paper-year-value{
+  width: 40px;
+}
+
+
+
+/** Slider */
+
+#flexslider-1 {
+  background-color: inherit;
+  margin-bottom: 2em;
+  background-color: #ccc;
+  padding: 0.5em;
+}
+
+/** paging list element */
+div#flexslider-1 ol.flex-control-nav {
+  margin-top: 0.5em;
+  top: 90%;
+  list-style-type: none;
+  list-style: none;
+  right: -90%;
+}
+
+div#flexslider-1 ol.flex-control-nav li {
+  display: flex;
+}
+
+
+/** paging links */
+div#flexslider-1 ol.flex-control-nav li a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  color: transparent;
+}
+
+div#flexslider-1 ol.flex-control-nav li a.active {
+  background-color: #000;
+}
+
+
+/** navigation arrows */
+
+div#flexslider-1 ul.flex-direction-nav {
+  display: block;
+}
+
+div#flexslider-1 ul.flex-direction-nav a {
+  overflow: visible;
+  top: 100%;
+}
+
+
+
+div#flexslider-1.flexslider ul.slides {
+  /** height: 40em; */
+  text-align: justify;
+}
+
+div#flexslider-1.flexslider ul.slides img {
+  width: auto;
+  height:20em;
+  /**
+  margin-left: auto;
+  margin-right: auto;
+  **/
+  float: left;
+  display: inline-block;
+
+  margin-right: 1em;
+
+}
+
+div#flexslider-1.flexslider .views-field.views-field-field-research-result-image-capt {
+  float: left;
+  display: block-inline;
+
+}
+
+div#flexslider-1.flexslider .views-field.views-field-field-related-projects {
+  display:block-inline;
+  float: left;
+  clear: left;
+}
+
+div#flexslider-1.flexslider .views-field.views-field-field-reference-publication {
+  float: left;
+  padding-top: 0.5em;
+  clear: both;
+}
+
+
+/** customize the title on the front page **/
+div#block-views-research-spotlight-block {
+  margin-top: 3em;
+}
+
+
+div#block-views-research-spotlight-block h2 a{
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+/** The main theme-slider on the front page
+    This is needed to override the flexslider.css styling, that messes up
+    the position of the pager
+*/
+section#slider ol.flex-control-nav {
+  width: auto;
+}
+
+
+
+/*Finish customizations for simulations page*/
+
+
+
+/**fix accordion height when expanded to be same as content height*/
+/**.ui-accordion-content-active { height: inherit !important; } */
